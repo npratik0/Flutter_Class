@@ -53,6 +53,7 @@
 //   }
 // }
 
+import 'package:assignment_2/screens/column_screen.dart';
 import 'package:assignment_2/screens/flutter_layout_screen.dart';
 import 'package:assignment_2/screens/rich_text.dart';
 import 'package:flutter/material.dart';
@@ -117,6 +118,11 @@ class DashboardScreen extends StatelessWidget {
               context: context,
               title: "Layout Screen",
               screen: FlutterLayoutScreen(),
+            ),
+            _menuTile(
+              context: context,
+              title: "Column Screen",
+              screen: ColumnScreen(),
             ),
           ],
         ),
