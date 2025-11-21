@@ -8,14 +8,38 @@ class ColumnScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("Column Screen")),
       body: Container(
+        width: double.infinity,
+        height: double.infinity,
         color: Colors.yellow,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: const [
-            Icon(Icons.star, size: 50),
-            Icon(Icons.star, size: 100),
-            Icon(Icons.star, size: 50),
+          children: [
+            ElevatedButton(onPressed: () {}, child: const Text('Button 1')),
+            ElevatedButton(onPressed: () {}, child: const Text('Button 2')),
+            ElevatedButton(onPressed: () {}, child: const Text('Button 3')),
           ],
+          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //   children: const [
+          //     Column(
+          //       children: const [
+          //         Icon(Icons.star, size: 50),
+          //         Icon(Icons.star, size: 50),
+          //       ],
+          //     ),
+
+          //     Column(
+          //       children: const [
+          //         Icon(Icons.star, size: 50),
+          //         Icon(Icons.star, size: 100),
+          //         Icon(Icons.star, size: 50),
+          //       ],
+          //     ),
+          //     Column(
+          //       children: const [
+          //         Icon(Icons.star, size: 50),
+          //         Icon(Icons.star, size: 50),
+          //       ],
+          //     ),
+          //   ],
         ),
       ),
     );
