@@ -1,4 +1,3 @@
-import 'package:assignment_2/app.dart';
 import 'package:flutter/material.dart';
 
 class RichTextScreen extends StatelessWidget {

@@ -55,6 +55,7 @@
 
 import 'package:assignment_2/screens/column_screen.dart';
 import 'package:assignment_2/screens/container_screen.dart';
+import 'package:assignment_2/screens/flexible_expanded_screen.dart';
 import 'package:assignment_2/screens/flutter_layout_screen.dart';
 import 'package:assignment_2/screens/image_screen.dart';
 import 'package:assignment_2/screens/rich_text.dart';
@@ -131,10 +132,15 @@ class DashboardScreen extends StatelessWidget {
               title: "Container Screen",
               screen: ContainerScreen(),
             ),
+            // _menuTile(
+            //   context: context,
+            //   title: "Image Screen",
+            //   screen: ImageScreen(),
+            // ),
             _menuTile(
               context: context,
-              title: "Image Screen",
-              screen: ImageScreen(),
+              title: "Flexible Screen",
+              screen: FlexibleExpandedScreen(),
             ),
           ],
         ),
