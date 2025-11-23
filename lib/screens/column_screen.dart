@@ -12,10 +12,12 @@ class ColumnScreen extends StatelessWidget {
         height: double.infinity,
         color: Colors.yellow,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () {}, child: const Text('Button 1')),
+            TextButton(onPressed: () {}, child: const Text('Button 1')),
             ElevatedButton(onPressed: () {}, child: const Text('Button 2')),
-            ElevatedButton(onPressed: () {}, child: const Text('Button 3')),
+            OutlinedButton(onPressed: () {}, child: const Text('Button 3')),
           ],
           //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
           //   children: const [
