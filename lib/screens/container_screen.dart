@@ -12,10 +12,27 @@ class _ContainerScreenState extends State<ContainerScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.amber[50],
+      // body: SafeArea(
+      //   child: Center(
+      //     child: Container(
+      //       width: 200,
+      //       height: 200,
+      //       alignment: Alignment.center,
+      //       decoration: BoxDecoration(
+      //         shape: BoxShape.circle,
+      //         color: Colors.amberAccent,
+      //         border: Border.all(color: Colors.black, width: 2),
+      //       ),
+      //       child: const Text('I am container'),
+      //     ),
+      //   ),
+      // ),
       body: SafeArea(
         child: Container(
-          color: Colors.amberAccent,
-          child: const Text('I am container'),
+          width: double.infinity,
+          height: double.infinity,
+          alignment: Alignment.centerRight,
+          child: const Text("Hello"),
         ),
       ),
     );
