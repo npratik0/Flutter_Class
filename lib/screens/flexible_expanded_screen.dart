@@ -1,3 +1,4 @@
+import 'package:assignment_2/common/my_snackbar.dart';
 import 'package:flutter/material.dart';
 
 class FlexibleExpandedScreen extends StatefulWidget {
@@ -8,27 +9,27 @@ class FlexibleExpandedScreen extends StatefulWidget {
 }
 
 class _FlexibleExpandedScreenState extends State<FlexibleExpandedScreen> {
-  _showSnackbar() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        backgroundColor: Colors.green,
-        content: Text("I am container 1"),
-        duration: Duration(seconds: 1),
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
-  }
+  // _showSnackbar() {
+  //   ScaffoldMessenger.of(context).showSnackBar(
+  //     const SnackBar(
+  //       backgroundColor: Colors.green,
+  //       content: Text("I am container 1"),
+  //       duration: Duration(seconds: 1),
+  //       behavior: SnackBarBehavior.floating,
+  //     ),
+  //   );
+  // }
 
-  _showSnackbar2() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        backgroundColor: Colors.red,
-        content: Text("I am container 2"),
-        duration: Duration(seconds: 1),
-        behavior: SnackBarBehavior.floating,
-      ),
-    );
-  }
+  // _showSnackbar2() {
+  //   ScaffoldMessenger.of(context).showSnackBar(
+  //     const SnackBar(
+  //       backgroundColor: Colors.red,
+  //       content: Text("I am container 2"),
+  //       duration: Duration(seconds: 1),
+  //       behavior: SnackBarBehavior.floating,
+  //     ),
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +41,11 @@ class _FlexibleExpandedScreenState extends State<FlexibleExpandedScreen> {
             Expanded(
               flex: 1,
               child: GestureDetector(
-                onTap: () => _showSnackbar(),
+                onTap: () => showMySnackBar(
+                  context: context,
+                  message: "I am first container",
+                  color: Colors.green,
+                ),
                 child: Container(
                   width: double.infinity,
                   alignment: Alignment.center,
@@ -52,7 +57,11 @@ class _FlexibleExpandedScreenState extends State<FlexibleExpandedScreen> {
             Expanded(
               flex: 2,
               child: GestureDetector(
-                onTap: () => _showSnackbar2(),
+                onTap: () => showMySnackBar(
+                  context: context,
+                  message: "I am second container",
+                  color: Colors.red,
+                ),
                 child: Container(
                   width: double.infinity,
                   alignment: Alignment.center,
